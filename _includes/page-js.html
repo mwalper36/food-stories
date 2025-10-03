@@ -144,9 +144,18 @@
 
     // Keyboard event handler
     function handleKeyboard(event) {
+      // Don't interfere with form inputs, contenteditable, or when modifier keys are pressed
+      const activeElement = document.activeElement;
+      if (activeElement.tagName === 'INPUT' || 
+          activeElement.tagName === 'TEXTAREA' || 
+          activeElement.contentEditable === 'true' ||
+          event.ctrlKey || event.metaKey || event.altKey) {
+        return;
+      }
+
       if (!workshopMode) {
         // Only respond to 'w' key when not in workshop mode
-        if (event.key.toLowerCase() === 'w' && !event.ctrlKey && !event.metaKey) {
+        if (event.key.toLowerCase() === 'w') {
           event.preventDefault();
           toggleWorkshopMode();
         }
@@ -165,10 +174,8 @@
           break;
         case 'w':
         case 'W':
-          if (!event.ctrlKey && !event.metaKey) {
-            event.preventDefault();
-            toggleWorkshopMode();
-          }
+          event.preventDefault();
+          toggleWorkshopMode();
           break;
         case 'Home':
           event.preventDefault();
