@@ -1,5 +1,5 @@
 ---
-title: My First BBQ
+title: Marie Writes about food stuffs
 author: Marie Walper
 location: Durham, NC
 thumbnail: bbq.png
