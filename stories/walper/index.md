@@ -2,7 +2,7 @@
 title: Marie Writes about food stuffs
 author: Marie Walper
 location: Durham, NC
-thumbnail: bbq.png
+thumbnail: soapapillas.jpg
 summary: My summary of food goes here.
 date: 2025-08-01
 layout: base
