@@ -18,7 +18,7 @@ This story comes from Jordan Lee, who grew up in Chicago, where “barbecue” u
 {% include figure.html
   class="right"
   width="40%"
-  caption="What a nice view"
+  caption="this seems broken"
   image-path="soapapillas.jpg"
 %}
 
