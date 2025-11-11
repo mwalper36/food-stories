@@ -19,7 +19,7 @@ This story comes from Jordan Lee, who grew up in Chicago, where “barbecue” u
   class="right"
   width="40%"
   caption="What a nice view"
-  image-path="bbq.png"
+  image-path="soapapillas.jpg"
 %}
 
 
